@@ -89,7 +89,7 @@ def dummy_api():
 
         random_address = choice(addresses)
         random_address = random_address[0]
-        random_address = random_address.split(";", -1)
+        random_address = random_address.split(";", -1)h
 
         person["city"] = random_address[0]
         person["street"] = random_address[1]
