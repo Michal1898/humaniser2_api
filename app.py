@@ -83,7 +83,9 @@ def dummy_api():
             start=start_date,
             stop=end_date
         )
-        person["birthdate"] = random_date
+        person["day_of_birth"]=random_date.day
+        person["month_of_birth"]=random_date.month
+        person["year_of_birth"]=random_date.year
 
         random_address = choice(addresses)
         random_address = random_address[0]
