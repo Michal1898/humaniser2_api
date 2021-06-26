@@ -28,6 +28,9 @@ def dummy_api():
     if gender2=="FEMALE":
         gender=FEMALE
 
+    age_min=int(request.args.get("min"))
+    age_max=int(request.args.get("max"))
+
     current_date = date.today()
     start_date = current_date - relativedelta(years=age_max)
     end_date = current_date - relativedelta(years=age_min)
